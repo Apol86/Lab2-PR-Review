@@ -5,10 +5,13 @@ import java.util.Random;
 
 import org.junit.jupiter.api.Test;
 
-/*
+/**
  * 总体原则：用等价类划分覆盖不足两个元素、重复值和普通无序数组；
  * 用边界值分析覆盖两元素、末尾元素、十进制整次幂、最大元素值和最大长度。
  * 另外在固定种子的随机数据上，与独立的比较排序基准进行对照。
+ *
+ * <p>评审建议（2024113155）：此处总体原则属于类级说明，建议采用 Javadoc 格式，
+ * 便于 javadoc 等文档工具识别并与测试类注释规范保持一致。
  */
 class L2024113197_4_Test {
     private final Solution4 solution = new Solution4();
